@@ -42,7 +42,6 @@ gem 'annotate', '~> 2.7', '>= 2.7.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-<<<<<<< HEAD
 group :test do
   gem 'capybara'
   gem 'factory_girl_rails'
@@ -51,8 +50,6 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
 end
-=======
->>>>>>> master
 
 group :development do
   gem 'guard-rspec', '~> 4.6.4'
