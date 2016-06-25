@@ -1,0 +1,7 @@
+<div>
+  <%= form_for @tweet do |f| %>
+      <%= f.text_area :body, placeholder: "Test" %>
+      <br>
+      <%= f.submit 'Post'%>
+  <% end %>
+</div>

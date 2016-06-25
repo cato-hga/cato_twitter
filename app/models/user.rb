@@ -30,5 +30,22 @@ class User < ActiveRecord::Base
     user
   end
 
+  def twitter_client
+    @client ||= Twitter::REST::Client.new do |config|
+      config.consumer_key        = Figaro.env.twitter_api_key
+      config.consumer_secret     = Figaro.env.twitter_api_secret
+      config.access_token        = token
+      config.access_token_secret = secret
+    end
+  end
+
+  def user_tweets(user_id)
+    twitter_client.user_timeline(user_id)
+  end
+
+  def home_t
+    twitter_client.home_timeline
+  end
+
 
 end
