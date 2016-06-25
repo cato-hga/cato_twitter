@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 
 gem 'figaro'
+
+gem 'twitter', '~> 5.16'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
@@ -27,7 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
-#gem 'omniauth'
+gem 'omniauth'
 
 
 gem 'annotate', '~> 2.7', '>= 2.7.1'
@@ -40,6 +42,7 @@ gem 'annotate', '~> 2.7', '>= 2.7.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+<<<<<<< HEAD
 group :test do
   gem 'capybara'
   gem 'factory_girl_rails'
@@ -48,6 +51,8 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
 end
+=======
+>>>>>>> master
 
 group :development do
   gem 'guard-rspec', '~> 4.6.4'
@@ -55,5 +60,6 @@ group :development do
   gem 'web-console', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem "better_errors"
 end
 
