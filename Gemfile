@@ -59,4 +59,6 @@ group :development do
   gem 'spring'
   gem "better_errors"
 end
+#Styling
+gem 'bootstrap-sass', '~> 3.3.6'
 

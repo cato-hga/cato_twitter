@@ -18,6 +18,6 @@ class Tweet < ActiveRecord::Base
 
 
   def post_to_twitter
-    user.twitter.update(body)
+    user.twitter_client.update(body)
   end
 end
