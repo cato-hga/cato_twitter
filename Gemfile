@@ -40,6 +40,10 @@ gem 'annotate', '~> 2.7', '>= 2.7.1'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+group :production do
+  gem 'pg'
+end
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :test do
@@ -52,6 +56,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'sqlite3'
   gem 'guard-rspec', '~> 4.6.4'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
