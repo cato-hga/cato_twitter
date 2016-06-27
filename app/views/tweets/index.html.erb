@@ -1,8 +1,11 @@
-<div>
-  <% @tweets.each do |tweet| %>
-    <h2>
-      Tweets:<br>
-      <%= tweet.body %>
-    </h2>
+<div id="tweet">
+  <h2><%= link_to 'Tweet', new_tweet_path, class: 'btn btn-primary' %></h2>
+</div>
+<div class="timeline">
+  <h1>My Timeline</h1>
+  <% @time_line.each do |f| %><br>
+      @<%= f.user.screen_name %>:
+      <br>
+      <%= f.text %><br>
   <% end %>
 </div>

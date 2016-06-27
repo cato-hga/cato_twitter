@@ -3,6 +3,7 @@ class TweetsController < ApplicationController
   before_action :signed_in_user
   def index
     @tweets = Tweet.where(user_id: current_user.id).order(created_at: :desc)
+    @time_line = current_user.timeline
     @user_tweets = current_user.user_tweets(current_user)
   end
 

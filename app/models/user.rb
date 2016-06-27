@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
     twitter_client.user_timeline(user_id)
   end
 
-  def home_t
+  def timeline
     twitter_client.home_timeline
   end
 

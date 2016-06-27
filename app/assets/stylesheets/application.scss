@@ -2,3 +2,72 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$midnight-blue: #036;
+$iron: #dadbdf;
+
+.navbar-default {
+  background-color: deepskyblue ;
+}
+
+h1 {
+  color: deepskyblue;
+}
+
+div#tweet {
+  text-align: right;
+  margin-right: 20px;
+}
+
+textarea {
+  margin: 0px;
+  height: 325px;
+  width: 500px;
+}
+
+.btn-primary  {
+  background-color:deepskyblue;
+}
+.btn-primary:hover {
+  background-color: deepskyblue;
+}
+
+.timeline {
+  margin-left: 20px;
+}
+
+a:hover {
+  color: deepskyblue;
+}
+
+a {
+  color: deepskyblue;
+}
+
+
+
+body {
+  background-color: $iron;
+}
+
+.navbar .navbar-nav > li > a {
+  color: white;
+  font-size: large;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-collapse .navbar-right:hover {
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+
+  color: white;
+}

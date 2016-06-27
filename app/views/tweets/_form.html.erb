@@ -1,7 +1,9 @@
-<div>
-  <%= form_for @tweet do |f| %>
-      <%= f.text_area :body, placeholder: "Test" %>
-      <br>
-      <%= f.submit 'Post'%>
-  <% end %>
+<div class="text-center">
+  <div class="new_tweet">
+    <%= form_for @tweet do |f| %>
+        <%= f.text_area :body, placeholder: "Compose a tweet" %>
+        <br>
+        <%= f.submit 'Post Tweet', class: 'btn btn-primary'%>
+    <% end %>
+  </div>
 </div>
