@@ -39,7 +39,7 @@ class User < ActiveRecord::Base
     end
   end
 
-  def user_tweets(user_id)
+  def my_tweets(user_id)
     twitter_client.user_timeline(user_id)
   end
 
