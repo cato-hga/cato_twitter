@@ -1,3 +1,0 @@
-== Twitter
-
-Twitter Client using Ruby on Rails
