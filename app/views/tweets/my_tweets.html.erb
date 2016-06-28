@@ -1,0 +1,20 @@
+<div id="tweet">
+  <%= link_to "My Timeline", tweets_path, class: "btn btn-primary" %>
+</div>
+<% @my_tweets.each do |f| %>
+    <div class="panel-heading">
+      <div class="media-body">
+        <strong>
+          <%= link_to "@#{f.user.screen_name}", "https://twitter.com/#{f.user.screen_name}" %>
+        </strong>
+        <time>
+          <%= time_ago_in_words f.created_at %>
+          ago
+        </time>
+        <br/>
+        <h3>
+          <%= f.text%>
+        </h3>
+      </div>
+    </div>
+<% end %>

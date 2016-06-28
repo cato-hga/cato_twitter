@@ -4,11 +4,14 @@ class TweetsController < ApplicationController
   def index
     @tweets = Tweet.where(user_id: current_user.id).order(created_at: :desc)
     @time_line = current_user.timeline
-    @user_tweets = current_user.user_tweets(current_user)
   end
 
   def new
     @tweet = Tweet.new
+  end
+
+  def my_tweets
+    @my_tweets = current_user.my_tweets(current_user)
   end
 
   def create
